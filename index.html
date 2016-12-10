@@ -34,9 +34,11 @@
 <p>In the sample data set given, the values of division, Home Team, Away Team, FTHG, FTAG, HS, AS (which are acronyms for different soccer statistics like Full-Time Home Goals, Home shots, etc.) are read into a dictionary. This makes it easier to access a value with some key and extracting the value given the key for the data set.</p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methods</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>The match data was read into a training, validation, and testing sets for classifier algorithms. In the given flow chart below, the raw data from the soccer website was read in and scaled by assigning each value in a dictionary. This was then used to create a training set and validation set to build the experiment. This was done by designating EPL seasons 2000-2009 as the training data set, EPL seasons 2010-2014 as the testing set, and LL seasons 2000-2004 as the validation set. Using statistics from La Liga for the validation set allowed the increase the size of the training set to 10 seasons of EPL data, but considered it best to train a classifier on the same league (EPL) as the testing set.</p>
+
+<p><img src="http://i.imgur.com/wZR2NjS.png" alt="Flow Chart"></p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
