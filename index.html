@@ -20,12 +20,14 @@
 
     <section class="main-content">
       <h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Introduction</strong>
+</h3>
 
 <p>Predicting the results of sports is a big deal for many people, ranging from casual fans to analysts and sports franchises. Accurately predicting the scores and outcomes of matches not only is important to fans but also to organizers to create fair leagues. The purpose of this project is to implement various neural network approaches in accurately predicting soccer scores in the English Premier League and testing their accuracy.</p>
 
 <h3>
-<a id="problem-description" class="anchor" href="#problem-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem Description</h3>
+<a id="problem-description" class="anchor" href="#problem-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Problem Description</strong>
+</h3>
 
 <p>Soccer is a highly competitive sport with many factors affecting each game. Given a team dataset, successfully implement and compare different neural networks to accurately predict soccer scores and outcomes using past matches for the EPL and additional features.</p>
 
@@ -34,14 +36,18 @@
 <p>In the sample data set given, the values of division, Home Team, Away Team, FTHG, FTAG, HS, AS (which are acronyms for different soccer statistics like Full-Time Home Goals, Home shots, etc.) are read into a dictionary. This makes it easier to access a value with some key and extracting the value given the key for the data set.</p>
 
 <h3>
-<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methods</h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Methods</strong>
+</h3>
 
 <p>The match data was read into a training, validation, and testing sets for classifier algorithms. In the given flow chart below, the raw data from the soccer website was read in and scaled by assigning each value in a dictionary. This was then used to create a training set and validation set to build the experiment. This was done by designating EPL seasons 2000-2009 as the training data set, EPL seasons 2010-2014 as the testing set, and LL seasons 2000-2004 as the validation set. Using statistics from La Liga for the validation set allowed the increase the size of the training set to 10 seasons of EPL data, but considered it best to train a classifier on the same league (EPL) as the testing set.</p>
 
 <p><img src="http://i.imgur.com/wZR2NjS.png" alt="Flow Chart"></p>
 
+<p>The dictionary values constructed were best suited to machine learning algorithms, and were evaluated with a multinomial naive Bayes classifier, a support vector machine, a perceptron, a stochastic gradient descent model, and a Gaussian naive Bayes classifier</p>
+
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results</strong>
+</h3>
 
 <p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
