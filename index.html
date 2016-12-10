@@ -49,12 +49,22 @@
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results</strong>
 </h3>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>The prediction being tested is whether a game will result in a win, loss, or tie. Also based off historical data, what will be the final score of a match by using various features such as previous games, shots taken on the goal, etc. The neural networks generated match predictions that can be comparable to actual match results. Different algorithms were compared with each other to determine which approach classified the labels correctly. </p>
+
+<p><img src="http://i.imgur.com/kyvD7cZ.png" alt="">
+<img src="http://i.imgur.com/IHezn7t.png" alt="">
+<img src="http://i.imgur.com/PZgnSH3.png" alt="">
+<img src="http://i.imgur.com/vLzUcBv.png" alt=""></p>
+
+<p>By generating dictionary values for the data set, the simple last-result approach became the baseline against which was compared more complicated features. These complicated features consisted of: number of past matches considered, changing which features were derived from each game such as shots taken or half-time score, and combining all features.</p>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="conclusions" class="anchor" href="#conclusions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Conclusions</strong>
+</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>After much data analysis, I found using less features that the Gaussian Bayes, the Multi Bayes, and SVM were more accurate than the perceptron and SGD. However, comparing features individually seemed to produce lower accuracies than when combining features. Also worth noting is that the best indication of which team is going to win is dependent primarily on head to head games within the last 2 games, as any more produced more noise. Even with that, the classifiers were able to produce higher accuracies than the baseline model of last-result.</p>
+
+<p>Future work will involve using a larger dataset and improving the model by including in the feature vectors the betting odds produced by popular consensus or other predictive algorithms.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/tenaciousm17/CS5600-AI">Predicting Soccer Matches: A Neural Network Approach</a> is maintained by <a href="https://github.com/tenaciousm17">tenaciousm17</a>.</span>
